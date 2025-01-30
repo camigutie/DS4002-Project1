@@ -4,12 +4,17 @@
 
 ## (1) Software and Platform
 Software type: Python
-Package: VADER
+
+Package: VADER/
+
 Platform: Mac/Windows
 ## (2) A Map of Documentation
 This repository contains the contents necessary to implement our sentiment analysis which consists of 3 main folders:
+
 DATA FOLDER: 
+
 OUTPUT FOLDER: 
+
 SCRIPTS FOLDER: 
 ## (3) Result Replication
 
