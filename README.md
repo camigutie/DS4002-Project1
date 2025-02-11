@@ -19,17 +19,18 @@ Platform: Mac/Windows
 This repository contains the contents necessary to implement our sentiment analysis which consists of 3 main folders:
 
 DATA FOLDER: 
-raw.csv: Our raw dataset containing email_text (str) and email_type (str)
-sentiment.csv: Our dataset with sentiment analysis scores. These calculations take a long time so we've saved them here as a benchmark. This file contains email_text, email_type, and four values representing sentiment intensity scores.
-email.parquet: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams.
+* raw.csv: Our raw dataset containing email_text (str) and email_type (str)
+* sentiment.csv: Our dataset with sentiment analysis scores. These calculations take a long time so we've saved them here as a benchmark. This file contains email_text, email_type, and four values representing sentiment intensity scores.
+* email.parquet: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams.
 
 OUTPUT FOLDER: 
 
 * ADD
 
 SCRIPTS FOLDER:
-make_data.ipynb: This script transforms raw.csv to email.parquet, adding sentiment analysis scores, and transforming email_text to numerical representations. This file takes a long time to run, so we recommend you use the email.parquet we've provided and skip straight to analysis.ipynb.
-analysis.ipynb: This script uses email.parquet to train a logistic regression model to predict whether an email is spam or not. This script measures the accuracy of the model and generates scripts and tables for our output folder.
+* basic_eda.ipynb: This script reads in the raw.csv for exploratory data analysis of the relationship between the email text and email type columns. Distribution of email types, email text length, and most common words are investigated through figures.   
+* make_data.ipynb: This script transforms raw.csv to email.parquet, adding sentiment analysis scores, and transforming email_text to numerical representations. This file takes a long time to run, so we recommend you use the email.parquet we've provided and skip straight to analysis.ipynb.
+* analysis.ipynb: This script uses email.parquet to train a logistic regression model to predict whether an email is spam or not. This script measures the accuracy of the model and generates scripts and tables for our output folder.
 
 ## (3) Result Replication
 
