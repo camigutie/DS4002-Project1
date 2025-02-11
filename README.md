@@ -19,20 +19,30 @@ Platform: Mac/Windows
 This repository contains the contents necessary to implement our sentiment analysis which consists of 3 main folders:
 
 DATA FOLDER: 
-
-* ADD
+raw.csv: Our raw dataset containing email_text (str) and email_type (str)
+sentiment.csv: Our dataset with sentiment analysis scores. These calculations take a long time so we've saved them here as a benchmark. This file contains email_text, email_type, and four values representing sentiment intensity scores.
+email.parquet: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams.
 
 OUTPUT FOLDER: 
 
 * ADD
 
 SCRIPTS FOLDER:
-
-* ADD 
+make_data.ipynb: This script transforms raw.csv to email.parquet, adding sentiment analysis scores, and transforming email_text to numerical representations. This file takes a long time to run, so we recommend you use the email.parquet we've provided and skip straight to analysis.ipynb.
+analysis.ipynb: This script uses email.parquet to train a logistic regression model to predict whether an email is spam or not. This script measures the accuracy of the model and generates scripts and tables for our output folder.
 
 ## (3) Result Replication
 
 ### In order to replicate the results of our study, you must follow these steps:
+If you want to fully recreate our dataset, you can run make_data.ipynb. This file takes a long time to run, and we recommend using the email.parquet we've provided and skip straight to analysis.ipynb. 
+
+Recreating our dataset requires the following dependencies:
+- numpy
+- pandas
+- scikit-learn
+- nltk and VADER
+
+To recreate our analysis, run analysis.ipynb using email.parquet.
 
 ## (4) References
 [1] N. Kumaran, “Spam does not bring us joy—ridding Gmail of 100 million more spam messages with TensorFlow,” Google Workspace Blog. Accessed: Jan. 30, 2025. [Online]. Available: https://workspace.google.com/blog/product-announcements/ridding-gmail-of-100-million-more-spam-messages-with-tensorflow
