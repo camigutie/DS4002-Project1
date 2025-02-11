@@ -3,9 +3,16 @@
 ### Group 20: Ethan Banerjee, Camila Gutierrez
 
 ## (1) Software and Platform
-Software type: Python
+Software type: Python 
 
-Package: VADER/
+Packages: 
+* Pandas Package
+* NLTK (Natural Language Toolkit) Package  
+* Matplotlib Package
+* Numpy Package
+* Wordcloud Package 
+* Vader Sentimental Analysis Package
+
 
 Platform: Mac/Windows
 ## (2) A Map of Documentation
