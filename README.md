@@ -19,10 +19,11 @@ Platform: Mac/Windows
 This repository contains the contents necessary to implement our sentiment analysis which consists of 3 main folders:
 
 DATA FOLDER: 
-
+* ADD
 OUTPUT FOLDER: 
-
-SCRIPTS FOLDER: 
+* ADD
+SCRIPTS FOLDER:
+* ADD 
 ## (3) Result Replication
 
 ### In order to replicate the results of our study, you must follow these steps:
