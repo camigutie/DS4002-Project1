@@ -21,7 +21,7 @@ This repository contains the contents necessary to implement our sentiment analy
 DATA FOLDER: 
 * **raw.csv**: Our raw dataset containing email_text (str) and email_type (str)
 * **sentiment.csv**: Our dataset with sentiment analysis scores. These calculations take a long time so we've saved them here as a benchmark. This file contains email_text, email_type, and four values representing sentiment intensity scores.
-* **email.parquet**: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams.
+* **email.parquet**: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams (one and two-word phrases).
 
 OUTPUT FOLDER: 
 * **confusion_matrix.png**:
