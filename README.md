@@ -12,7 +12,7 @@ Packages:
 * Numpy Package
 * Wordcloud Package 
 * Vader Sentimental Analysis Package
-
+* Scikit-learn
 
 Platform: Mac/Windows
 ## (2) A Map of Documentation
