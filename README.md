@@ -24,8 +24,13 @@ DATA FOLDER:
 * **email.parquet**: Our final established dataset after transforming email_text to numerical representation using TF-IDF (Term Frequency-Inverse Document Frequency) vectorization. We used unigrams and bigrams.
 
 OUTPUT FOLDER: 
+* **confusion_matrix.png**:
+* **email_dist.png**
+* **email_length.png**
+* **phishing_wordcloud.png**
+* **safe_wordcloud.png**
+* **sentiment_distribution.png**
 
-* ADD
 
 SCRIPTS FOLDER:
 * **basic_eda.ipynb**: This script reads in the raw.csv for exploratory data analysis of the relationship between the email text and email type columns. Distribution of email types, email text length, and most common words are investigated through figures.   
